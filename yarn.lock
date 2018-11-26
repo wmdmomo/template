@@ -1612,6 +1612,11 @@ cookie-signature@1.0.6:
   resolved "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
   integrity sha1-4wOogrNCzD7oylE6eZmXNNqzriw=
 
+cookie.js@^4.0.1:
+  version "4.0.1"
+  resolved "http://mavenhk.wallstcn.com/repository/npm-all/cookie.js/-/cookie.js-4.0.1.tgz#963cabb75db3003f08702c305cf60b83affed889"
+  integrity sha512-PMTgktpfieujNiQ3rT4y8YdAcwzz6Riw+O3y8W4chYZGnKQ6sTGshPbh0JEGLqMMfYq12GgK/g+dxUC/6Juesw==
+
 cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
