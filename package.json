@@ -62,6 +62,7 @@
     "shelljs": "^0.8.2",
     "teleman": "^0.3.5",
     "vue": "^2.5.17",
+    "wscn-affiliate": "^0.1.0",
     "wscn-auth": "^0.2.0",
     "wscn-ivanka-api": "^2.10.4",
     "wscn-toast": "^0.1.0",
