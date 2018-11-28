@@ -11,10 +11,9 @@ import 'regenerator-runtime/runtime'
 import gtag from '~/shared/gtag'
 import { weixin, isWeixin } from '~/shared/weixin'
 import shareMeta from '~/shared/shareMeta'
-import setAff from '~/shared/setAff'
+import 'wscn-affiliate'
 
 gtag.init()
-setAff()
 
 if (isWeixin) {
   weixin

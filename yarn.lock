@@ -6654,6 +6654,13 @@ write@^0.2.1:
   dependencies:
     mkdirp "^0.5.1"
 
+wscn-affiliate@^0.1.0:
+  version "0.1.0"
+  resolved "http://mavenhk.wallstcn.com/repository/npm-all/wscn-affiliate/-/wscn-affiliate-0.1.0.tgz#332a8405347d4afbfbafccaafe3d50ddc6f126c6"
+  integrity sha512-ByaSTVydPLQcsWr1Q7/9AZUwOuuwIXs0Old6tb5hnEa0Wyx2goA5mE5IBBeiRetjSCN1NVVXwG+qaijvS1YKzQ==
+  dependencies:
+    cookie.js "^4.0.1"
+
 wscn-auth@^0.2.0:
   version "0.2.0"
   resolved "http://mavenhk.wallstcn.com/repository/npm-all/wscn-auth/-/wscn-auth-0.2.0.tgz#363f823028117dcd44df7a9ec30fcbe0c7c96502"
