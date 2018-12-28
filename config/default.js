@@ -1,4 +1,4 @@
-const BASE_URL = 'https://activity.wallstreetcn.com/wrts-eventnewyear'
+const BASE_URL = 'https://activity.jianshiapp.com/wrts-eventnewyear'
 
 module.exports = {
   runtimeConfig: {

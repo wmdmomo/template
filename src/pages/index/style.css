@@ -1,6 +1,8 @@
 .mobile-wrapper{
   background:url("../../images/tu2.png") repeat;
-  height: 1000px;
+}
+header{
+  position: relative;
 }
 img{
   width:100%;
@@ -29,47 +31,222 @@ img{
   position: relative;
   margin-top:-30%;
 }
-.people{
+.people,.book,.mask{
   width:100%;
-  position: absolute;
-  top:20%;
 }
-.people-info{
+.book{
+  padding-bottom: 16.67%;
+}
+.people-info,.book-info,.mask-info{
   background:url("../../images/tu1.png") repeat;
   width:93.73%;
   margin:0 auto;
+  position: relative;
+}
+.mask-info{
+  width:86.8%;
+  margin-top: -0.69%;
 }
 .part{
   display: block;
   width:93.73%;
   margin:0 auto;
 }
+.part2{
+  display: block;
+  width:86.8%;
+  margin-top: 16.4%;
+}
 .year{
-  width:34%;
-  position: absolute;
-  right:1.28%;
+  width:36.27%;
+  margin-left:62.3%;
+  margin-top: 2.84%;
   z-index:3;
 }
 .dou{
   width:5.69%;
+  position: relative;
+  display: block;
+}
+.dou1{
+  left:5.26%;
+  margin-top:-2.28%;
+}
+.dou2{
+  left: 85.06%;
+}
+.hua{
+  position: relative;
 }
 .hua1{
   width:72.69%;
+  left:13.51%;
 }
 .hua2{
-  width:66.73%;
+  width:66.71%;
+  left:16.64%;
+  margin-top: 4.8%;
+}
+.hua3{
+  width: 83.93%;
+  left:7.82%;
+  margin-top: 2.7%;
 }
 .people-content-list{
   padding:0 5.76%;
+  margin-top: 13.23%;
 }
 .people-content{
   position: relative;
 }
+.button{
+  width: 60.74%;
+  display: block;
+  margin: 16.93% auto 0 auto;
+  padding-bottom: 15.08%;
+}
+.info{
+  position: relative;
+}
+.info img{
+  display: block;
+}
 .icon{
   position: absolute;
-  top:72.44%;
   right:0;
 }
 .icon1{
   width:45.82%;
+  bottom: 6.73%;
 }
+.icon2{
+  width: 27%;
+  bottom: 6.10%;
+}
+.icon3{
+  width: 27%;
+  bottom: 6.02%;
+}
+.icon4{
+  width:30.06%;
+  bottom: 5.85%;
+}
+.icon5{
+  width:30.22%;
+  bottom: 5.57%;
+}
+.icon6{
+  width:49.04%;
+  bottom: 6.49%;
+}
+.icon7{
+  width:40.35%;
+  bottom: 6.17%;
+}
+.icon8{
+  width:43.09%;
+  bottom: 6.49%;
+}
+.icon9{
+  width:46.78%;
+  bottom: 5.31%;
+}
+.line{
+  margin-top: 6.83%;
+}
+.book{
+  margin-top: 16%;
+}
+.book-content-list{
+  padding:0 5.76%;
+  margin-top: 12.41%;
+}
+.lang{
+  display: block;
+  z-index: 4;
+}
+.books{
+  padding-top: 19.29%;
+  width:100%;
+  background-color: rgb(255 238 238);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.book-content{
+  position: relative;
+  margin-bottom: 19.13%;
+}
+.book_-content{
+  position: relative;
+  padding-bottom: 26.04%;
+}
+.book_-content img{
+  display: block;
+}
+.book-content img{
+ display: block;
+}
+.book_{
+  width:88.3%;
+  margin:0 auto;
+}
+.miao{
+  width:30.22%;
+  position: absolute;
+  right: 21.38%;
+}
+.miao1,.miao2,.miao3{
+  bottom: 0;
+}
+.miao7{
+  margin-top: 3.7%;
+}
+.miao4,.miao5,.miao6{
+  bottom: -14%;
+}
+.foot{
+  margin-top: 20.42%;
+  text-align: center;
+}
+.ma{
+  width: 35.69%;
+  margin-top:7.72%;
+}
+.font{
+  margin-top: 4.46%;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+  padding-bottom: 9.65%;
+
+}
+.mask-content{
+  padding:15.08% 5.54% 17.69% 8%;
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+}
+.close{
+  width:6.8%;
+  position: absolute;
+  left:86.67%;
+  margin-top: 3.87%;
+  z-index: 8;
+}
+.mask{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  opacity: 0;
+  display: none;
+  transition: all .3s;
+}
+.mask.show {
+  opacity: 1;
+  display: block;
+}
+
