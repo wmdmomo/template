@@ -1,0 +1,75 @@
+.mobile-wrapper{
+  background:url("../../images/tu2.png") repeat;
+  height: 1000px;
+}
+img{
+  width:100%;
+}
+.show-modal{
+  position: absolute;
+  top:10px;
+  right:2.8%;
+  width:16.4%;
+}
+.btitle{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width:60.1%;
+  top:5.4%;
+}
+.stitle{
+  position: absolute;
+  width:95%;
+  left:50%;
+  transform: translateX(-50%);
+  top:25.6%;
+}
+.main{
+  position: relative;
+  margin-top:-30%;
+}
+.people{
+  width:100%;
+  position: absolute;
+  top:20%;
+}
+.people-info{
+  background:url("../../images/tu1.png") repeat;
+  width:93.73%;
+  margin:0 auto;
+}
+.part{
+  display: block;
+  width:93.73%;
+  margin:0 auto;
+}
+.year{
+  width:34%;
+  position: absolute;
+  right:1.28%;
+  z-index:3;
+}
+.dou{
+  width:5.69%;
+}
+.hua1{
+  width:72.69%;
+}
+.hua2{
+  width:66.73%;
+}
+.people-content-list{
+  padding:0 5.76%;
+}
+.people-content{
+  position: relative;
+}
+.icon{
+  position: absolute;
+  top:72.44%;
+  right:0;
+}
+.icon1{
+  width:45.82%;
+}
