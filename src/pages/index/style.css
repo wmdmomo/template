@@ -1,4 +1,5 @@
 .mobile-wrapper{
+  background-size: 25px 25px;
   background:url("../../images/tu2.png") repeat;
 }
 header{
@@ -39,6 +40,7 @@ img{
 }
 .people-info,.book-info,.mask-info{
   background:url("../../images/tu1.png") repeat;
+  background-size: 25px 25px;
   width:93.73%;
   margin:0 auto;
   position: relative;
@@ -168,7 +170,7 @@ img{
 .books{
   padding-top: 19.29%;
   width:100%;
-  background-color: rgb(255 238 238);
+  background: rgb(255 238 238);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
