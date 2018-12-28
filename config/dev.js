@@ -2,7 +2,8 @@ const BASE_URL = ''
 
 module.exports = {
   runtimeConfig: {
-    BASE_URL
+    BASE_URL,
+    API_URL: 'https://api-sit.jianshiapp.com/apiv1'
   },
 
   devServer: {
