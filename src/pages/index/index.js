@@ -16,11 +16,9 @@ import 'wscn-affiliate'
 gtag.init()
 
 if (isWeixin) {
-  alert(1)
   weixin
     .init()
     .then(() => {
-      alert(2)
       weixin.setShareMeta({
         title: '你有一份择机而动的见识宝典待领取 or 就在见识！必须献给2019的宝典',
         desc: '见识过2018的风起云涌，你的2019必须择机而动',

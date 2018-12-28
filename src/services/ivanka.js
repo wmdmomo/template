@@ -6,7 +6,8 @@ const api = new WscnIvankaAPI({
   clientType: 'mweb',
   deviceIdPrefix: 'mwscn',
   cache: true,
-  onSafeError: handleError
+  onSafeError: handleError,
+  base: 'https://api.jianshiapp.com/apiv1'
 })
 
 export default api
