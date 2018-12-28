@@ -170,7 +170,7 @@ img{
 .books{
   padding-top: 19.29%;
   width:100%;
-  background: rgb(255 238 238);
+  background-color: rgba(255,238,238,1);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
