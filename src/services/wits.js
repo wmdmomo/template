@@ -8,14 +8,6 @@ const service = axios.create({
 export function wechatSignature(params) {
   return service.get('/user/weixin/signature', { params })
 }
-let base = ''
-export const postRequest = (url, params) => {
-  return axios({
-    method: 'post',
-    url: `${base}${url}`,
-    data: params,
-    headers: {
-      'Content-Type': ' application/json'
-    }
-  })
+export function submitRecruit(data) {
+  return service.post('/circle/recruit_circle_owner', data)
 }
