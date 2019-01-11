@@ -4,38 +4,43 @@ import '~/styles/mobile-wrapper.css'
 import './style.css'
 import 'regenerator-runtime/runtime'
 import 'wscn-affiliate'
+import toast from 'wscn-toast'
 import { setWechatShare } from '../../shared/shareMeta'
+import { postRequest } from '../../services/wits'
 
 if (window.wx) {
   setWechatShare()
 }
-
-const showbutton = document.querySelector('#showbutton')
-const closebutton = document.querySelector('#closebutton')
-const modal = document.querySelector('.mask')
-showbutton.addEventListener('click', () => {
-  modal.classList.add('show')
-  stopBodyScroll(true)
-})
-closebutton.addEventListener('click', () => {
-  modal.classList.remove('show')
-  stopBodyScroll(false)
-})
-let bodyEl = document.body
-let top = 0
-
-function stopBodyScroll(isFixed) {
-  if (isFixed) {
-    top = window.scrollY
-    bodyEl.style.position = 'fixed'
-    bodyEl.style.top = -top + 'px'
-    bodyEl.style.left = 0
-    bodyEl.style.width = '100%'
-    bodyEl.style.overflow = 'hidden'
-  } else {
-    bodyEl.style.position = ''
-    bodyEl.style.top = ''
-    bodyEl.style.overflow = ''
-    window.scrollTo(0, top) // 回到原先的top
-  }
+function isPhone(phone) {
+  return /^1\d{10}$/.test(phone)
 }
+let isFetching = false
+const fetchbutton = document.querySelector('.bottom')
+fetchbutton.addEventListener('click', () => {
+  const phonenumber = document.getElementById('field1').value
+  const weixin = document.getElementById('field2').value
+  const weibo = document.getElementById('field3').value
+  if (!phonenumber) {
+    toast('请填写手机号')
+    return
+  }
+  if (!isPhone(phonenumber)) {
+    toast('请输入正确的手机号')
+    return
+  }
+  if (isFetching) {
+    toast('请勿重复提交')
+    return
+  }
+  isFetching = true
+  postRequest('http://api-sit.jianshiapp.com/apiv1/circle/recruit_circle_owner', {
+    'mobile': phonenumber,
+    'wechat': weixin,
+    'weibo': weibo
+  }).then(resp => {
+    if (resp && resp.code === 20000) {
+      isFetching = false
+      toast('提交成功')
+    }
+  })
+})
