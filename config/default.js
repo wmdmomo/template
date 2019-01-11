@@ -1,4 +1,4 @@
-const BASE_URL = 'https://activity.jianshiapp.com/wrts-eventnewyear'
+const BASE_URL = 'https://activity.jianshiapp.com/recurit'
 
 module.exports = {
   runtimeConfig: {
