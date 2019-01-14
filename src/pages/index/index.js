@@ -5,11 +5,14 @@ import './style.css'
 import 'regenerator-runtime/runtime'
 import 'wscn-affiliate'
 import toast from 'wscn-toast'
-// import { setWechatShare } from '../../shared/shareMeta'
+import { setWechatShare } from '../../shared/shareMeta'
 import { submitRecruit } from '../../services/wits'
 
 function isPhone(phone) {
   return /^1\d{10}$/.test(phone)
+}
+if (window.wx) {
+  setWechatShare()
 }
 let isFetching = false
 

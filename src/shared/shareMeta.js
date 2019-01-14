@@ -4,9 +4,9 @@
 import { wechatSignature } from '../services/wits'
 
 const shareData = {
-  title: '你有一份择机而动的见识宝典待领取',
-  desc: '见识过2018的风起云涌，你的2019必须择机而动',
-  imgUrl: 'https://wpimg.wallstcn.com/834f39db-37b6-4297-9731-cf3e3b927bfe.png',
+  title: '见识圈主招募',
+  desc: '2019年想要成为见识大咖？这份进阶手册帮你轻松圆梦！',
+  imgUrl: 'https://wpimg.wallstcn.com/b0942658-e34f-4dfd-84bd-23223f3fa42f.png',
   link: location.href
 }
 
