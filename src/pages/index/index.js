@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       isFetching = false
       if (res.data.code === 20000) {
         toast('提交成功')
+        window.location.href = 'https://jianshiapp.com/create-circle'
       } else {
         toast(res.data.message)
       }
