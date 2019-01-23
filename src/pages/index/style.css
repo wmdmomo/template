@@ -3,57 +3,119 @@ img {
   height: 100%;
   display: block;
 }
-.bg{
+.bg {
   width: 100%;
   position: relative;
 }
-.bg-info{
+.bg-info {
   position: absolute;
-  left:-1px;
+  left: -1px;
   top:0;
   margin-top:16.8%;
 }
-.circle{
+.circle {
   position: relative;
-  width:92.42%;
-  margin: -5% auto 0 auto;
+  margin: 0 auto 40px;
 }
-.info{
-  margin: 0 1.5%;
+
+.main-info {
+  padding: 0 15px;
 }
-.circle-info{
-  width:100%;
+
+.circle-info {
   position: absolute;
-  margin-top:-115%;
+  top: 18%;
+  left: 0;
+  width: 100%;
+  padding: 0 15px 0 15px;
 }
-.person-info{
-  width:91.96%;
+
+.circle-info.info-a {
+  padding: 0 25px 0 15px;
+}
+.info-b, .info-c {
+  top: 14%;
+}
+
+.circle-info .person-info:last-child {
+  margin-bottom: 0;
+}
+.person-info {
   background-color: rgb(255,255,255);
-  border-radius: 5px; 
-  margin:0 4% 5% 4%;
+  border-radius: 5px;
   position: relative;
+  display: flex;
+  margin-bottom: 20px;
 }
-.people{
-  width:21.15%;
-  height: 14.58%;
+.p-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.p-content {
+  position: relative;
+  flex: 1 1;
+  height: 115px;
+}
+.p-content > a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 35px;
+  border-bottom-right-radius: 5px;
+}
+.p-content > a img {
+  border-bottom-right-radius: 5px;
+}
+.jieshao {
+  padding: 15px 15px 0 0;
+}
+.people {
+  width: 65px;
+  height: 65px;
+}
 
+.jieshao > strong {
+  display: block;
+  font-size: 16px;
+  color: rgba(211, 52, 70, 1);
 }
-.button{
-  width:37.5%;
+.jieshao-top {
+  margin-bottom: 16px;
+}
+.jieshao-top strong {
+  font-size: 16px;
+  color: rgba(185, 43, 60, 1);
+}
+.jieshao-top span {
+  font-size: 12px;
+  color: rgba(185, 43, 60, 1);
+  margin-left: 8px;
+}
 
+
+.banner {
+  padding: 0 20px;
 }
-.zi1{
-  color: rgb(185, 43, 60);
-  font-size:17px;
-  line-height: 22.5px;
+.banner img {
+  display: block;
+  width: 100%;
 }
-.zi2{
-  color: rgb(185, 43, 60);
-  font-size:12px;
-  line-height: 22.5px;
-}
-.zi3{
-  color: rgb(211,52,70);
-  font-size:18px;
-  line-height: 22.5px;
+
+@media (max-width: 321px)  {
+  .people {
+    width: 50px;
+    height: 50px;
+  }
+  .p-content {
+    height: 100px;
+  }
+  .jieshao-top strong, .jieshao > strong {
+    font-size: 14px;
+  }
+  .person-info {
+    margin-bottom: 10px;
+  }
 }

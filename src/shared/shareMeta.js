@@ -5,8 +5,8 @@ import { wechatSignature } from '../services/wits'
 
 const shareData = {
   title: '见识大佬年终大盘点',
-  desc: '2019年想要成为见识大咖？这份进阶手册帮你轻松圆梦！',
-  imgUrl: 'https://wpimg.wallstcn.com/b0942658-e34f-4dfd-84bd-23223f3fa42f.png',
+  desc: '这些入驻见识的首席、专家和精英，你认识几位？？',
+  imgUrl: 'https://wpimg.wallstcn.com/d5e90540-b818-4553-b599-034240761aa9.png',
   link: location.href
 }
 
