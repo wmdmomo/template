@@ -4,7 +4,7 @@
 import { wechatSignature } from '../services/wits'
 
 const shareData = {
-  title: '见识圈主招募',
+  title: '见识大佬年终大盘点',
   desc: '2019年想要成为见识大咖？这份进阶手册帮你轻松圆梦！',
   imgUrl: 'https://wpimg.wallstcn.com/b0942658-e34f-4dfd-84bd-23223f3fa42f.png',
   link: location.href
